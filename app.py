@@ -4,8 +4,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# Configuration
-USER_ID = "shubhanshuTiwar_08062003"
+USER_ID = "shubhanshu_08062003"
 EMAIL = "tiwarishubhanshu1071@gmail.com"
 ROLL_NUMBER = "RA2111003010163"
 
