@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask,render_template, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -7,6 +7,11 @@ CORS(app)
 USER_ID = "shubhanshu_08062003"
 EMAIL = "tiwarishubhanshu1071@gmail.com"
 ROLL_NUMBER = "RA2111003010163"
+
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/bfhl', methods=['POST'])
 def process_data():
