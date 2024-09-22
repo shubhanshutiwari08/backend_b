@@ -10,4 +10,8 @@ app.use(cors());
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use('/bfhl', bfhlRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Backend is working! Use the /bfhl endpoint.');
+  });
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
