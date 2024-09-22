@@ -11,9 +11,9 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
   const { data, file_b64 } = req.body;
 
-  const user_id = 'john_doe_17091999'; // example user ID
-  const email = 'john@xyz.com';
-  const roll_number = 'ABCD123';
+  const user_id = 'shubhanshu_tiwari_08062003'; // example user ID
+  const email = 'sa5597@srmist.edu.in';
+  const roll_number = 'RA2111003010163';
 
   const numbers = [];
   const alphabets = [];
